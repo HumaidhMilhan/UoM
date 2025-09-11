@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q8</title>
+</head>
+<body>
+
+    <button onmousemove="this.style.color='red'" onclick="window.alert('Button clicked!')">Click this button</button><br><br>
+
+    <script>
+       let name=window.prompt("Enter your name: ");
+       window.alert("Welcome to the webpage");
+       let openTab=window.confirm("Do you like to open a new tab?") == true;
+
+       if(openTab){
+        window.open("page2.html");
+       } else {
+           document.write(name);
+       }
+
+       function showmessage(){
+            window.alert("Thanks for visiting");
+       }
+       setTimeout(showmessage, 5000);
+    </script>
+</body>
+</html>

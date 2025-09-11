@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q6</title>
+</head>
+<body>
+    <p onmouseenter="changetext()" onmouseleave="reverttext()">This text changes when the mouse is hovered over</p>
+    <button onclick="Showalert()">Click me</button>
+
+    <script>
+        function changetext(){
+            document.querySelector("p").innerHTML="The text is changed and hover the mosue to revert it back";
+        }
+
+        function reverttext(){
+            document.querySelector("p").innerHTML="This text changes when the mouse is hovered over";
+        }
+
+        function Showalert(){
+            window.alert("Button clicked");
+        }
+    </script>
+</body>
+</html>

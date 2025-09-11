@@ -1,0 +1,10 @@
+h1, ul, p{
+    text-align: center;
+    font-size: 30px;
+    color: darkblue;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-indent: 10px;
+}

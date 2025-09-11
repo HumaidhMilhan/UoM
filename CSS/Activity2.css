@@ -1,0 +1,15 @@
+.head{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+
+.para1{
+    color: green;
+    font-weight: bold;
+}
+
+.para2{
+    font-style: italic;
+    color: purple;
+}

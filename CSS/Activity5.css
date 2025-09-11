@@ -1,0 +1,28 @@
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
+}
+
+a:hover{
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:visited{
+    color: purple;
+    text-decoration: none;
+}
+
+p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkblue;
+}
+
+h1:hover{
+    color: green;
+    font-size: 20px;
+}

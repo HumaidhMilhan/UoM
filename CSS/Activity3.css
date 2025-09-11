@@ -1,0 +1,30 @@
+#head{
+    font-size: 80px;
+    color: red;
+    text-align: center;
+    text-shadow: tomato;  
+    text-decoration: underline;  
+}
+
+#para1{
+    color: green;
+    font-weight: bold;
+    text-shadow: lime;
+    text-align: center;
+}
+
+#para2{
+    font-style: italic;
+    color: purple;
+    text-shadow: plum;
+    text-align: center;
+}
+
+#para3{
+    color: blue;
+    font-style: oblique;
+    text-shadow: cyan;
+    text-decoration: overline;
+    text-align: center;
+    font-size: 30px;
+}

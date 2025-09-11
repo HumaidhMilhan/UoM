@@ -1,0 +1,28 @@
+#welcome{
+    color: blue;
+    font-size: 100px;
+    text-align: center;
+}
+
+#para1{
+    color: green;
+    font-weight: bold;
+}
+
+#para2{
+    font-style: italic;
+    color: purple;
+}
+
+#footer{
+    text-align: center;
+    font-size: 80%;
+    color: gray;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
