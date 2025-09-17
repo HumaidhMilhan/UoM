@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Validations 01</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="myForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your name" required><br><br>
+        <div id="nameError" style="color: red;"></div>
+
+        <label for="country">Country:</label><br>
+        <select id="country" name="country" required>
+            <option value="default" disabled selected>Select your country</option>
+            <option value="sri_lanka">Sri Lanka</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <div id="countryError" style="color: red;"></div>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="150" required><br><br>
+        <div id="ageError" style="color: red;"></div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event){
+            // Clear previous errors
+            const nameError = document.getElementById("nameError");
+            const countryError = document.getElementById("countryError");
+            const ageError = document.getElementById("ageError");
+            nameError.textContent = "";
+            countryError.textContent = "";
+            ageError.textContent = "";
+
+            // Read and normalize inputs
+            const username = document.getElementById("username").value.trim();
+            const country = document.getElementById("country").value;
+            const ageValue = document.getElementById("age").value;
+            const age = Number(ageValue);
+
+            let isValid = true;
+
+            // Username validation
+            if (username.length === 0) {
+                nameError.textContent = "Username is invalid";
+                isValid = false;
+            }
+
+            // Country validation
+            if (country === "default") {
+                countryError.textContent = "Please select a country";
+                isValid = false;
+            }
+
+            // Age validation (numeric and range)
+            if (ageValue === "" || Number.isNaN(age)) {
+                ageError.textContent = "Please enter a valid age";
+                isValid = false;
+            } else if (age < 18 || age > 100) {
+                ageError.textContent = "Age requirement not met";
+                isValid = false;
+            }
+
+            // If invalid, prevent submission; else allow
+            if (!isValid) {
+                event.preventDefault();
+                return;
+            }
+
+            // For this demo, prevent actual submission and show success
+            event.preventDefault();
+            alert("Form submitted successfully!");
+        });
+    </script>
+</body>
+</html>

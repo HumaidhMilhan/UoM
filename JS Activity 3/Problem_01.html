@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Validations 01</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="myForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your name" required><br><br>
+        <div id="nameError" style="color: red;"></div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        <div id="emailError" style="color: red;"></div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Validations 01</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="myForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your name"><br><br>
+        <div id="nameError" style="color: red;"></div><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event){
+        event.preventDefault();
+
+        let name = document.getElementById("username").value;
+        let nameError = document.getElementById("nameError");
+
+        if (name === ""){
+            nameError.textContent="username must be entered"
+        } else {
+            alert("Form submitted successfully")
+        }
+        })
+    </script>
+</body>
+</html>

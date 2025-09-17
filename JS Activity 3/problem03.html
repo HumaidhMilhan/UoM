@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Validations 01</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="myForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your name" required><br><br>
+        <div id="nameError" style="color: red;"></div>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+        <div id="passwordError" style="color: red;"></div>
+        <input type="submit" value="Login">
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event){
+            event.preventDefault
+
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let nameError = document.getElementById("nameError");
+            let passwordError = document.getElementById("passwordError");
+
+            if (username.length<6){
+                nameError.textContent="Username must be at least 6 characters long";
+            } else if (password.length<8 || password === "") {
+                passwordError.textContent = "Password is invalid"
+            } else {
+                alert("Form submitted successfully")
+            }
+
+        })
+    </script>
+</body>
+</html>
