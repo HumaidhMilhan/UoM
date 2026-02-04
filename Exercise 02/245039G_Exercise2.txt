@@ -1,0 +1,113 @@
+1) i. 5
+   ii. A
+   iii. ERROR: Type mismatch
+   iv. ABCDE
+   v. ABCDEF
+   vi. 5.500000
+   vii. ERROR : multi-character character constant [-Wmultichar]
+   ix. ERROR : multi-character literal with 5 characters exceeds 'int' size of 4 bytes
+    x. 2+3=5
+
+2) a. <336>
+      <336>
+      <       336>
+      <336       >
+
+   b. <1234.560000>
+      <1.234560e+03>
+      <1234.56>
+      <1234.6>
+      <  1234.560>
+      < 1.235e+03>
+
+   c. <Paul must die!>
+      <        Paul must die!>
+      <                 Paul >
+      <Paul                  >
+    
+   d. Printing floating-point numbers with
+      floating-point conversion specifiers.
+      Compare the output with source code
+
+      1. 1.234568e+06
+      2. 1.234568e+06
+      3. -1.234568e+06
+      4. 1.234568E+06
+      5.  1234567.890000
+      6.  1.23457e+06
+      7. 1.23457E+06
+   e.  Printing integers right-justified.
+       Compare the output with the source code
+         
+      
+         1
+        12
+       123
+      1234
+      12345
+      
+        -1
+       -12
+      -123
+      -1234
+      -12345
+
+   f. Using precision while printing integers,
+       floating-point numbers, and strings.
+      Compare the output with the source code
+
+
+      Using precision for integers
+              0873
+              000000873
+
+      Using precision for floating-point numbers
+              123.945
+              1.239e+02
+              124
+
+      Using precision for strings
+              Happy Birth
+
+   g. Right justifying and left justifying values.
+       Compare the output with the source code.
+
+
+           hello         7         a  1.230000
+
+      hello     7         a         1.230000
+
+   h. Printing numbers with and without the + flag.
+       Compare the output with the source code
+
+
+      786
+      -786
+      +786
+      -786
+
+   i. Printing a space before signed values
+      not preceded by + or -n
+
+
+       877
+      -877
+
+   j. o, x, X, and any floating-point specifiers
+      Compare the output with the source code
+
+
+      02623
+      0x593
+      0X593
+
+      1427.00
+      1427.00
+
+   k. Printing with the 0 (zero) flag fills in leading zeros
+       Compare the output with the source code
+
+
+      +00000762
+      000000762
+  
